@@ -1,0 +1,87 @@
+
+    body{
+      margin: 0;
+      padding: 0;
+      background-color: #BFC7CB;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container{
+      min-height:400px;
+      width: 320px;
+      border-radius: 10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+      background-color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly;
+      overflow-y: auto;
+    }
+    h1{
+      text-align: center;
+      color:  #2F6FED;
+    }
+    .add{
+      display: flex;
+      justify-content:space-between;
+      gap: 10px;
+      padding: 10px;
+    }
+    .task-input{
+      height: 30px;
+      width:250px;
+      border-radius: 5px;
+      border: 1px solid #2F6FED ;
+    }
+    .add-btn{
+      background-color:#2F6FED ;
+      border-radius: 5px;
+      border: 0;
+      width:90px;
+      color: white;
+      
+    }
+    .task{
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      margin: 10px;
+      padding: 10px;
+      gap: 10px;
+    
+      
+      
+    }
+    .remove-btn{
+      background-color: red;
+      height: 30px;
+      width: 70px;
+      border: 0;
+      border-radius: 5px;
+      color: white;
+    }
+    .check{
+      height: 30px;
+      width:30px;
+    }
+    button {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.check:checked + p{
+  text-decoration: line-through;
+  color: gray;
+}
+button:active{
+  transition: transform 0.1s;
+  transform: scale(0.95);
+  
+}
