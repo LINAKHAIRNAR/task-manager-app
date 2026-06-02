@@ -29,7 +29,7 @@ What I Learned
 
 Live Demo
 
-https://linakhairnar.github.io/task-manager-ui/
+https://linakhairnar.github.io/task-manager-app/
 
 Future Improvements
 
