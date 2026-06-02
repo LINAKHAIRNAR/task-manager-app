@@ -10,14 +10,15 @@
       height: 100vh;
     }
     .container{
-      min-height:400px;
+      min-height:200px;
+      max-height: 500px;
       width: 320px;
       border-radius: 10px;
       box-shadow:0 4px 10px rgba(0,0,0,0.2);
       background-color: #FFFFFF;
       display: flex;
       flex-direction: column;
-      justify-content:space-evenly;
+      gap:10px;
       overflow-y: auto;
     }
     h1{
@@ -30,7 +31,7 @@
       gap: 10px;
       padding: 10px;
     }
-    .task-input{
+    #task-input{
       height: 30px;
       width:250px;
       border-radius: 5px;
@@ -51,10 +52,14 @@
       margin: 10px;
       padding: 10px;
       gap: 10px;
-    
-      
-      
     }
+    .task p {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-wrap: anywhere;
+    margin: 0;
+}
     .remove-btn{
       background-color: red;
       height: 30px;
@@ -62,14 +67,16 @@
       border: 0;
       border-radius: 5px;
       color: white;
+      flex-shrink: 0;       
     }
     .check{
       height: 30px;
       width:30px;
+      flex-shrink: 0;     
     }
     button {
   cursor: pointer;
-  transition: 0.2s;
+  transition: all 0.2s linear;
 }
 
 button:hover {
@@ -81,7 +88,10 @@ button:hover {
   color: gray;
 }
 button:active{
-  transition: transform 0.1s;
+  transition: transform 0.1s linear;
   transform: scale(0.95);
   
 }
+
+
+
